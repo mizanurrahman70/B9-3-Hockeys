@@ -24,6 +24,11 @@
       src="https://kit.fontawesome.com/de25b07a03.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      body{
+      border: 2px solid red;
+      }
+    </style>
   </head>
   <body>
     <header class="container mx-auto">
@@ -143,8 +148,8 @@
         <!-- progress container  -->
         <div class="grid grid-cols-1 lg:grid-cols-4">
           <!-- progres card one  -->
-          <div class="card w-96 bg-base-100">
-            <figure class="px-10 pt-10">
+          <div class="card lg:w-96 bg-base-100">
+            <figure class="lg:px-10 pt-10">
               <div
                 class="radial-progress font-extrabold text-red-500"
                 style="--value: 87"
@@ -155,7 +160,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Prayer Facility</h2>
-              <p class="w-[250px]">
+              <p class="lg:w-[250px]">
                 Every Muslim is expected to pray five times a day and thus
                 access to prayer facilities is of utmost importance to a Muslim
                 traveller. .
@@ -163,8 +168,8 @@
             </div>
           </div>
           <!-- progres card two  -->
-          <div class="card w-96 bg-base-100">
-            <figure class="px-10 pt-10">
+          <div class="card lg:w-96 bg-base-100">
+            <figure class="lg:px-10 pt-10">
               <div
                 class="radial-progress font-extrabold text-[#60D7A0]"
                 style="--value: 95"
@@ -175,15 +180,15 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Experienced Coach</h2>
-              <p class="w-[250px]">
+              <p class="lg:w-[250px]">
                 If you describe someone as experienced, you mean that they have
                 been doing a particular job or activity for a long time.
               </p>
             </div>
           </div>
           <!-- progres card three  -->
-          <div class="card w-96 bg-base-100">
-            <figure class="px-10 pt-10">
+          <div class="card lg:w-96 bg-base-100">
+            <figure class="lg:px-10 pt-10">
               <div
                 class="radial-progress font-extrabold text-[#FFB546]"
                 style="--value: 90"
@@ -202,8 +207,8 @@
             </div>
           </div>
           <!-- progres card four  -->
-          <div class="card w-96 bg-base-100">
-            <figure class="px-10 pt-10">
+          <div class="card lg:w-96 bg-base-100">
+            <figure class="lg:px-10 pt-10">
               <div
                 class="radial-progress font-extrabold text-[#4C8DF1]"
                 style="--value: 80"
@@ -214,7 +219,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Training Ground</h2>
-              <p class="w-[250px]">
+              <p class="lg:w-[250px]">
                 Discover the ultimate fitness experience at our CrossFit gym in
                 Bangkok. Achieve your goals with our expert trainers and
                 state-of-the-art equipment.
@@ -531,10 +536,10 @@
           </p>
         </div>
         <!-- main container  -->
-        <div class="flex flex-col lg:flex-row  ">
-          <div class="">
+        <div class="flex flex-col lg:flex-row gap-x-20 justify-center mt-10 ">
+          <div class="p-10 ">
             <!-- card one  -->
-            <div class="card w-96 bg-[#F8FDF0] ">
+            <div class="card lg:w-96 bg-[#F8FDF0] ">
               <div class="card-body">
                 <img class="w-[48px] h-[48px]" src="Images/Group 1171275317.png" alt="">
                 <h2 class="mt-4 opacity-35" >Phone Number :</h2>
@@ -542,11 +547,11 @@
               </div>
             </div>
 
-          </div>
+          
 
-        </div>
+        
             <!-- card two  -->
-            <div class="card w-96 bg-[#FFFCEF] mt-6 ">
+            <div class="card lg:w-96 bg-[#FFFCEF] mt-6 ">
               <div class="card-body">
                 <img class="w-[48px] h-[48px]" src="Images/Group 1171275318.png" alt="">
                 <h2 class="mt-4 opacity-35" >Email : </h2>
@@ -554,16 +559,49 @@
               </div>
             </div>
              <!-- card three  -->
-             <div class="card w-96 bg-[#EFF5FE] mt-6 ">
+             <div class="card lg:w-96 bg-[#EFF5FE] mt-6 ">
               <div class="card-body">
                 <img class="w-[48px] h-[48px]" src="Images/Group 1171275321.png" alt="">
                 <h2 class="mt-4 opacity-35" >Location :</h2>
                 <p class="font-semibold">12/24 Uttora Wireless Gate</p>
               </div>
             </div>
-
-          </div>
-
+        </div>
+          <!-- form div container  -->
+          <!-- this this my chapra section only can me understand Lg divice  visiable  -->
+        <div class="lg:block hidden  ">
+          <form action="">
+            <label class="text-xl font-bold" for="">Your Name</label>
+             <label class="text-xl font-bold ml-[270px] " for="">Your Email</label><br>
+            <input class="bg-[#F8F8F8] border-none w-[324px] h-[64px] rounded-xl " type="text" placeholder="Enter your full name">
+             <input class="bg-[#F8F8F8] border-none w-[324px] h-[64px] rounded-xl ml-10 mt-4" type="email" name="" id="" placeholder="Enter your email"><br>
+            <label class="text-xl font-bold" for="">Subject</label>
+            <label class="text-xl font-bold ml-[300px]" for="">Phone Number</label><br >
+            <input class="bg-[#F8F8F8] border-none w-[324px] h-[64px] rounded-xl"  type="text" placeholder="Enter your subject">
+            <input class="bg-[#F8F8F8] border-none w-[324px] h-[64px] rounded-xl ml-10 mt-4"  type="number" name="" id="" placeholder="Enter your phone number">
+          </form>
+          <h1 class="text-xl font-bold mt-4 mb-3">Massage</h1>
+          <textarea class="bg-[#F8F8F8]" name="" id="" cols="90" rows="14" placeholder="Write your message"></textarea>
+        <button class="btn btn-active btn-secondary font-bold bg-[#FF4240] rounded-lg absolute mt-[350px] -ml-[680px] w-[672px]">Secondary</button>
+        </div>
+        </div>
+        <!-- this div also same only me can understand this div lg divice hide and mobile divice visiable  -->
+        <div class="p-2 lg:hidden visible">
+          <form action="">
+            <label class="text-xl font-bold" for="">Your Name</label><br>
+            <input class="bg-[#F8F8F8] border-none w-full h-[64px] rounded-xl mt-4 " type="text" placeholder="Enter your full name"><br>
+             <label class="text-xl font-bold mt-4 " for="">Your Email</label><br>
+            
+         <input class="bg-[#F8F8F8] border-none w-full h-[64px] rounded-xl  mt-4" type="email" name="" id="" placeholder="Enter your email"><br>
+            <label class="text-xl font-bold mt-4" for="">Subject</label><br>
+            <input class="bg-[#F8F8F8] border-none w-full h-[64px] rounded-xl"  type="text" placeholder="Enter your subject"><br>
+            <label class="text-xl font-bold mt-4 " for="">Phone Number</label><br >
+            
+        <input class="bg-[#F8F8F8] border-none w-full h-[64px] rounded-xl mt-2 "  type="number" name="" id="" placeholder="Enter your phone number">
+          </form>
+          <h1 class="text-xl font-bold mt-4 mb-3">Massage</h1>
+          <textarea class="bg-[#F8F8F8]" name="" id="" cols="40" rows="14" placeholder="Write your message"></textarea>
+        <button class="btn btn-active btn-secondary font-bold bg-[#FF4240] rounded-lg w-full">Send Message</button>
         </div>
 
       </section>
